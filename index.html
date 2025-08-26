@@ -12,9 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Nav -->
   <header class="nav">
-    <a href="#" class="brand">
-      <span class="logo">▣</span>
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="FUT Trader Hub logo" class="logo-img" width="28" height="28" />
       <span>FUT Trader Hub</span>
     </a>
     <nav class="links">
@@ -26,6 +27,7 @@
     </nav>
   </header>
 
+  <!-- HERO -->
   <section class="hero" id="top">
     <canvas id="mesh" class="mesh" aria-hidden="true"></canvas>
     <canvas id="particles" class="particles" aria-hidden="true"></canvas>
@@ -59,6 +61,7 @@
       </figure>
     </div>
 
+    <!-- Trust marquee -->
     <div class="marquee" aria-hidden="true">
       <div class="track">
         <span>Live Console Prices</span>
@@ -77,10 +80,9 @@
         <span>Portfolio P&amp;L</span>
       </div>
     </div>
-
-    <a href="#features" class="scroll">Scroll</a>
   </section>
 
+  <!-- Stats -->
   <section class="section stats">
     <div class="stat">
       <div class="num" data-count="8219">0</div>
@@ -96,6 +98,7 @@
     </div>
   </section>
 
+  <!-- Features -->
   <section id="features" class="section features">
     <header class="sect-head">
       <h2>Everything you need to <span class="accent">win the market</span></h2>
@@ -136,6 +139,7 @@
     </div>
   </section>
 
+  <!-- Pricing -->
   <section id="pricing" class="section alt pricing">
     <header class="sect-head">
       <h2>Simple pricing</h2>
@@ -188,6 +192,7 @@
     </div>
   </section>
 
+  <!-- Community -->
   <section id="community" class="section community">
     <header class="sect-head">
       <h2>Trusted by traders</h2>
@@ -213,13 +218,13 @@
       <h3>Our Discord</h3>
       <p class="muted">Live tips, flips, and support.</p>
       <div class="embed-frame">
-        Discord widget can go here once you share the server ID (Server Settings → Widget → Enable Widget).<br/>
-        For now, use the button below.
+        Enable Server Widget in Discord (Server Settings → Widget) and share the server ID if you'd like me to embed it here.
       </div>
       <a class="btn discord" target="_blank" rel="noopener" href="https://discord.gg/bupmZ7yy">Join Discord</a>
     </div>
   </section>
 
+  <!-- FAQ -->
   <section id="faq" class="section">
     <header class="sect-head">
       <h2>FAQ</h2>
@@ -238,6 +243,7 @@
     </details>
   </section>
 
+  <!-- Final CTA -->
   <section class="section cta alt">
     <h2>Ready to level up your trades?</h2>
     <div class="cta-row">
@@ -247,8 +253,12 @@
     </div>
   </section>
 
+  <!-- Footer with logo -->
   <footer class="footer">
-    <p class="muted">© <span id="year"></span> FUT Trader Hub</p>
+    <div class="footer-left">
+      <img src="assets/logo.png" alt="FUT Trader Hub logo" class="logo-img" width="24" height="24" />
+      <p class="muted">© <span id="year"></span> FUT Trader Hub</p>
+    </div>
     <nav class="links small">
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
