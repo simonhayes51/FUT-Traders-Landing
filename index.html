@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FUT Trader Hub — Next‑Gen Trading Dashboard</title>
+  <meta name="description" content="Trade smarter with live console prices, smart movers, watchlists and a Chrome companion.">
+  <meta name="theme-color" content="#0c111f">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="brand">
+      <span class="logo">▣</span>
+      <span>FUT Trader Hub</span>
+    </a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta" class="btn ghost">Login</a>
+    </nav>
+  </header>
+
+  <!-- Animated hero -->
+  <section class="hero" id="top">
+    <!-- animated background layers -->
+    <canvas id="mesh" class="mesh" aria-hidden="true"></canvas>
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+
+    <div class="hero-inner">
+      <div class="copy">
+        <p class="kicker">EA FC Trading Toolkit</p>
+        <h1 class="title">Move first. <span class="accent">Profit more.</span></h1>
+        <p class="lead">Live console prices, smart trend scans, portfolio P&amp;L, and lightning‑fast watchlists. Secure Discord login — no EA credentials needed.</p>
+        <div class="cta-row" id="cta">
+          <a class="btn primary" href="https://backend.yourdomain.tld/login">Login to Dashboard</a>
+          <a class="btn secondary" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/your-extension-id">Add Chrome Extension</a>
+        </div>
+
+        <div class="badges">
+          <span>🔒 Discord OAuth</span>
+          <span>🟩 PS &amp; Xbox</span>
+          <span>⚡ Ultra fast</span>
+        </div>
+      </div>
+
+      <figure class="shot tilt">
+        <img src="assets/mock-dashboard.jpg" alt="FUT Trader Hub dashboard preview">
+      </figure>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Live Console Prices</span>
+        <span>Smart Movers (4h vs 24h)</span>
+        <span>EA Tax Calculator</span>
+        <span>Watchlists</span>
+        <span>Discord Alerts</span>
+        <span>Portfolio P&amp;L</span>
+      </div>
+      <div class="track clone">
+        <span>Live Console Prices</span>
+        <span>Smart Movers (4h vs 24h)</span>
+        <span>EA Tax Calculator</span>
+        <span>Watchlists</span>
+        <span>Discord Alerts</span>
+        <span>Portfolio P&amp;L</span>
+      </div>
+    </div>
+
+    <a href="#features" class="scroll">Scroll</a>
+  </section>
+
+  <!-- Feature cards -->
+  <section id="features" class="section">
+    <header class="sect-head">
+      <h2>Everything you need to <span class="accent">win the market</span></h2>
+      <p class="muted">Crafted to match your dashboard style — dark, minimal, neon highlights.</p>
+    </header>
+
+    <div class="grid">
+      <article class="card reveal">
+        <div class="icon">📈</div>
+        <h3>Live Price Checks</h3>
+        <p>Console prices with sparkline trends and extinction flags. Fut.gg powered.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🧠</div>
+        <h3>Smart Movers</h3>
+        <p>Surface players diverging between 4h and 24h — ideal for flips and snipes.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🔍</div>
+        <h3>Watchlist + Refresh</h3>
+        <p>Save a starting price and refresh with one click. Smart sort built‑in.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🧮</div>
+        <h3>EA Tax &amp; Profit</h3>
+        <p>Automatic tax and net profit on all sales, with weekly ROI summaries.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🔔</div>
+        <h3>Discord Alerts</h3>
+        <p>Price spikes, falls and portfolio milestones posted straight to your server.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🧩</div>
+        <h3>Chrome Companion</h3>
+        <p>Track sold listings on web app, auto‑log trades, and sync instantly.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="how" class="section alt">
+    <header class="sect-head">
+      <h2>How it works</h2>
+    </header>
+    <ol class="steps">
+      <li class="reveal"><span class="badge">1</span>Login with Discord.</li>
+      <li class="reveal"><span class="badge">2</span>Add the Chrome extension.</li>
+      <li class="reveal"><span class="badge">3</span>Start trading with watchlists, trends &amp; alerts.</li>
+    </ol>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <header class="sect-head">
+      <h2>FAQ</h2>
+    </header>
+    <details class="faq reveal">
+      <summary>Does this work for console data?</summary>
+      <p>Yes — PS &amp; Xbox are first‑class. PC can be enabled but is off by default for accuracy.</p>
+    </details>
+    <details class="faq reveal">
+      <summary>Is my account safe?</summary>
+      <p>We use Discord OAuth only. We never request your EA credentials.</p>
+    </details>
+    <details class="faq reveal">
+      <summary>How do I install the Chrome extension?</summary>
+      <p>Click “Add Chrome Extension” at the top and follow the Chrome Web Store flow.</p>
+    </details>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta alt">
+    <h2>Ready to level up your trades?</h2>
+    <div class="cta-row">
+      <a class="btn primary" href="https://backend.yourdomain.tld/login">Login to Dashboard</a>
+      <a class="btn secondary" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/your-extension-id">Add Chrome Extension</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="muted">© <span id="year"></span> FUT Trader Hub</p>
+    <nav class="links small">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
