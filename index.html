@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FUT Trader Hub — Next‑Gen Trading Dashboard</title>
-  <meta name="description" content="Trade smarter with live console prices, smart movers, watchlists and a Chrome companion.">
+  <title>FUT Trader Hub — Trade smarter, profit faster</title>
+  <meta name="description" content="FUT Trader Hub: console prices, smart movers, watchlists, portfolio P&L, and a Chrome extension.">
   <meta name="theme-color" content="#0c111f">
   <link rel="stylesheet" href="css/site.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,16 +19,16 @@
     </a>
     <nav class="links">
       <a href="#features">Features</a>
-      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#community">Community</a>
       <a href="#faq">FAQ</a>
-      <a href="#cta" class="btn ghost">Login</a>
+      <a href="https://backend-production-1f1a.up.railway.app/api/login" class="btn ghost">Login</a>
     </nav>
   </header>
 
-  <!-- Animated hero -->
   <section class="hero" id="top">
-    <!-- animated background layers -->
     <canvas id="mesh" class="mesh" aria-hidden="true"></canvas>
+    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
     <div class="blob b1"></div>
     <div class="blob b2"></div>
     <div class="blob b3"></div>
@@ -36,11 +36,15 @@
     <div class="hero-inner">
       <div class="copy">
         <p class="kicker">EA FC Trading Toolkit</p>
-        <h1 class="title">Move first. <span class="accent">Profit more.</span></h1>
-        <p class="lead">Live console prices, smart trend scans, portfolio P&amp;L, and lightning‑fast watchlists. Secure Discord login — no EA credentials needed.</p>
+        <h1 class="title">
+          <span id="typewriter" class="typewriter" aria-label="Animated headline"></span>
+        </h1>
+        <p class="lead">Live console prices, smart trend scans, portfolio P&amp;L, and lightning-fast watchlists. Secure Discord login — no EA credentials needed.</p>
+
         <div class="cta-row" id="cta">
-          <a class="btn primary" href="https://backend.yourdomain.tld/login">Login to Dashboard</a>
-          <a class="btn secondary" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/your-extension-id">Add Chrome Extension</a>
+          <a class="btn primary" href="https://backend-production-1f1a.up.railway.app/api/login">Login to Dashboard</a>
+          <a class="btn secondary" target="_blank" rel="noopener" href="#">Add Chrome Extension</a>
+          <a class="btn discord" target="_blank" rel="noopener" href="https://discord.gg/bupmZ7yy">Join Discord</a>
         </div>
 
         <div class="badges">
@@ -50,7 +54,7 @@
         </div>
       </div>
 
-      <figure class="shot tilt">
+      <figure class="shot tilt glow">
         <img src="assets/mock-dashboard.jpg" alt="FUT Trader Hub dashboard preview">
       </figure>
     </div>
@@ -77,67 +81,152 @@
     <a href="#features" class="scroll">Scroll</a>
   </section>
 
-  <!-- Feature cards -->
-  <section id="features" class="section">
+  <section class="section stats">
+    <div class="stat">
+      <div class="num" data-count="8219">0</div>
+      <div class="label">Players tracked</div>
+    </div>
+    <div class="stat">
+      <div class="num" data-count="1203">0</div>
+      <div class="label">Active traders</div>
+    </div>
+    <div class="stat">
+      <div class="num" data-count="4587">0</div>
+      <div class="label">Daily alerts</div>
+    </div>
+  </section>
+
+  <section id="features" class="section features">
     <header class="sect-head">
       <h2>Everything you need to <span class="accent">win the market</span></h2>
-      <p class="muted">Crafted to match your dashboard style — dark, minimal, neon highlights.</p>
+      <p class="muted">Dark, minimal, neon accents — built for traders.</p>
     </header>
 
     <div class="grid">
-      <article class="card reveal">
+      <article class="card reveal hoverlift">
         <div class="icon">📈</div>
         <h3>Live Price Checks</h3>
         <p>Console prices with sparkline trends and extinction flags. Fut.gg powered.</p>
       </article>
-      <article class="card reveal">
+      <article class="card reveal hoverlift">
         <div class="icon">🧠</div>
         <h3>Smart Movers</h3>
         <p>Surface players diverging between 4h and 24h — ideal for flips and snipes.</p>
       </article>
-      <article class="card reveal">
+      <article class="card reveal hoverlift">
         <div class="icon">🔍</div>
         <h3>Watchlist + Refresh</h3>
-        <p>Save a starting price and refresh with one click. Smart sort built‑in.</p>
+        <p>Save a starting price and refresh with one click. Smart sort built-in.</p>
       </article>
-      <article class="card reveal">
+      <article class="card reveal hoverlift">
         <div class="icon">🧮</div>
         <h3>EA Tax &amp; Profit</h3>
         <p>Automatic tax and net profit on all sales, with weekly ROI summaries.</p>
       </article>
-      <article class="card reveal">
+      <article class="card reveal hoverlift">
         <div class="icon">🔔</div>
         <h3>Discord Alerts</h3>
         <p>Price spikes, falls and portfolio milestones posted straight to your server.</p>
       </article>
-      <article class="card reveal">
+      <article class="card reveal hoverlift">
         <div class="icon">🧩</div>
         <h3>Chrome Companion</h3>
-        <p>Track sold listings on web app, auto‑log trades, and sync instantly.</p>
+        <p>Track sold listings on web app, auto-log trades, and sync instantly.</p>
       </article>
     </div>
   </section>
 
-  <!-- Process -->
-  <section id="how" class="section alt">
+  <section id="pricing" class="section alt pricing">
     <header class="sect-head">
-      <h2>How it works</h2>
+      <h2>Simple pricing</h2>
+      <p class="muted">Start free. Unlock pro tools when you’re ready.</p>
+      <div class="toggle">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="yearlyToggle" />
+          <span class="slider"></span>
+        </label>
+        <span>Yearly <span class="save">save 20%</span></span>
+      </div>
     </header>
-    <ol class="steps">
-      <li class="reveal"><span class="badge">1</span>Login with Discord.</li>
-      <li class="reveal"><span class="badge">2</span>Add the Chrome extension.</li>
-      <li class="reveal"><span class="badge">3</span>Start trading with watchlists, trends &amp; alerts.</li>
-    </ol>
+
+    <div class="plans">
+      <article class="plan card reveal">
+        <h3>Free</h3>
+        <p class="price"><span class="currency">£</span><span class="amount" data-monthly="0" data-yearly="0">0</span><span class="per">/mo</span></p>
+        <ul>
+          <li>Basic dashboard</li>
+          <li>Live price lookup</li>
+          <li>EA tax calculator</li>
+        </ul>
+        <a href="https://backend-production-1f1a.up.railway.app/api/login" class="btn ghost full">Get started</a>
+      </article>
+
+      <article class="plan card featured reveal">
+        <div class="badge-top">Most Popular</div>
+        <h3>Premium</h3>
+        <p class="price"><span class="currency">£</span><span class="amount" data-monthly="3" data-yearly="2.4">3</span><span class="per">/mo</span></p>
+        <ul>
+          <li>Smart Movers (4h vs 24h)</li>
+          <li>Watchlist + refresh</li>
+          <li>Discord alerts</li>
+          <li>Portfolio P&amp;L</li>
+        </ul>
+        <a href="https://backend-production-1f1a.up.railway.app/api/login" class="btn primary full">Upgrade</a>
+      </article>
+
+      <article class="plan card reveal">
+        <h3>Team</h3>
+        <p class="price"><span class="currency">£</span><span class="amount" data-monthly="8" data-yearly="6.4">8</span><span class="per">/mo</span></p>
+        <ul>
+          <li>All Premium features</li>
+          <li>Multi-user workspaces</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="mailto:sales@yourdomain.tld" class="btn secondary full">Talk to us</a>
+      </article>
+    </div>
   </section>
 
-  <!-- FAQ -->
+  <section id="community" class="section community">
+    <header class="sect-head">
+      <h2>Trusted by traders</h2>
+      <p class="muted">Join a growing community of FUT market makers.</p>
+    </header>
+
+    <div class="testimonials">
+      <blockquote class="quote card reveal">
+        <p>“Landed a 180k flip in 24h thanks to Smart Movers. This thing slaps.”</p>
+        <footer>— <strong>@FlipKing</strong></footer>
+      </blockquote>
+      <blockquote class="quote card reveal">
+        <p>“Watchlists + alerts = less screen time, more profit. Love the dashboard.”</p>
+        <footer>— <strong>@LazyLister</strong></footer>
+      </blockquote>
+      <blockquote class="quote card reveal">
+        <p>“Clean UI, accurate console prices, and the Chrome add-on is 🔥.”</p>
+        <footer>— <strong>@PS5Trader</strong></footer>
+      </blockquote>
+    </div>
+
+    <div class="discord-embed card reveal">
+      <h3>Our Discord</h3>
+      <p class="muted">Live tips, flips, and support.</p>
+      <div class="embed-frame">
+        Discord widget can go here once you share the server ID (Server Settings → Widget → Enable Widget).<br/>
+        For now, use the button below.
+      </div>
+      <a class="btn discord" target="_blank" rel="noopener" href="https://discord.gg/bupmZ7yy">Join Discord</a>
+    </div>
+  </section>
+
   <section id="faq" class="section">
     <header class="sect-head">
       <h2>FAQ</h2>
     </header>
     <details class="faq reveal">
       <summary>Does this work for console data?</summary>
-      <p>Yes — PS &amp; Xbox are first‑class. PC can be enabled but is off by default for accuracy.</p>
+      <p>Yes — PS &amp; Xbox are first-class. PC can be enabled but is off by default for accuracy.</p>
     </details>
     <details class="faq reveal">
       <summary>Is my account safe?</summary>
@@ -149,12 +238,12 @@
     </details>
   </section>
 
-  <!-- CTA -->
   <section class="section cta alt">
     <h2>Ready to level up your trades?</h2>
     <div class="cta-row">
-      <a class="btn primary" href="https://backend.yourdomain.tld/login">Login to Dashboard</a>
-      <a class="btn secondary" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/your-extension-id">Add Chrome Extension</a>
+      <a class="btn primary" href="https://backend-production-1f1a.up.railway.app/api/login">Login to Dashboard</a>
+      <a class="btn secondary" target="_blank" rel="noopener" href="#">Add Chrome Extension</a>
+      <a class="btn discord" target="_blank" rel="noopener" href="https://discord.gg/bupmZ7yy">Join Discord</a>
     </div>
   </section>
 
@@ -162,7 +251,8 @@
     <p class="muted">© <span id="year"></span> FUT Trader Hub</p>
     <nav class="links small">
       <a href="#features">Features</a>
-      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#community">Community</a>
       <a href="#faq">FAQ</a>
     </nav>
   </footer>
